@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@drawable/home_backgroud"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -11,17 +11,15 @@
         android:background="#ff1495f7"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        >
+        android:paddingTop="10dp">
 
         <ImageView
             android:id="@+id/content_frame_back"
             android:layout_width="30dp"
-            android:scaleType="centerInside"
             android:layout_height="30dp"
             android:onClick="onClickListen"
-            android:src="@drawable/zc_login_name"
-            />
+            android:scaleType="centerInside"
+            android:src="@drawable/zc_login_name" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -29,7 +27,7 @@
             android:layout_height="30dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/bg_progress_translate"/>
+            android:background="@drawable/bg_progress_translate" />
 
         <TextView
             android:id="@+id/main_search"
@@ -38,8 +36,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text="请输入关键字"
-            android:textColor="#ffdfdfdf"
-            />
+            android:textColor="#ffdfdfdf" />
 
         <ImageView
             android:layout_width="15dp"
@@ -47,22 +44,21 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/main_search"
             android:layout_toStartOf="@+id/main_search"
-            android:src="@drawable/search_navi"/>
+            android:src="@drawable/search_navi" />
+
         <ImageView
             android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:src="@drawable/emaila34"
-            android:visibility="invisible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:visibility="invisible" />
     </RelativeLayout>
 
-    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/refresh"
-        xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -76,8 +72,7 @@
                 <com.lkw.myapplication.tools.MyViewPager
                     android:id="@+id/head_pager"
                     android:layout_width="fill_parent"
-                    android:layout_height="90dp"
-                    />
+                    android:layout_height="90dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -90,35 +85,35 @@
                         android:id="@+id/imgvDot1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/greendot"/>
+                        android:src="@drawable/greendot" />
 
                     <ImageView
                         android:id="@+id/imgvDot2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
-                        android:src="@drawable/blackdot"/>
+                        android:src="@drawable/blackdot" />
 
                     <ImageView
                         android:id="@+id/imgvDot3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
-                        android:src="@drawable/blackdot"/>
+                        android:src="@drawable/blackdot" />
 
                     <ImageView
                         android:id="@+id/imgvDot4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
-                        android:src="@drawable/blackdot"/>
+                        android:src="@drawable/blackdot" />
 
                     <ImageView
                         android:id="@+id/imgvDot5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
-                        android:src="@drawable/blackdot"/>
+                        android:src="@drawable/blackdot" />
 
                 </LinearLayout>
             </RelativeLayout>
@@ -130,8 +125,7 @@
                 <com.lkw.myapplication.tools.MyViewPager
                     android:id="@+id/circleimg_pager"
                     android:layout_width="fill_parent"
-                    android:layout_height="150dp"
-                    />
+                    android:layout_height="150dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -145,19 +139,19 @@
                         android:id="@+id/twoDot1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/greendot"/>
+                        android:src="@drawable/greendot" />
 
                     <ImageView
                         android:id="@+id/twoDot2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/blackdot"/>
+                        android:src="@drawable/blackdot" />
                 </LinearLayout>
             </RelativeLayout>
 
 
-            <View style="@style/main_devider"/>
+            <View style="@style/main_devider" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -167,32 +161,29 @@
                 android:paddingBottom="13dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:paddingTop="13dp"
-                >
+                android:paddingTop="13dp">
 
                 <ImageView
                     android:layout_width="10dp"
                     android:layout_height="15dp"
-                    android:src="@drawable/voice_small"/>
+                    android:src="@drawable/voice_small" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="【最新动态】"
-                    android:textSize="13sp"
-                    />
+                    android:textSize="13sp" />
 
                 <FrameLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    >
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/project_back"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:singleLine="true"
-                        android:textSize="13dp"/>
+                        android:textSize="13dp" />
 
                     <com.lkw.myapplication.tools.AutoTextView
                         android:id="@+id/autotxtv"
@@ -201,7 +192,7 @@
                         android:background="#ffffff"
                         android:singleLine="true"
                         android:text="“光华戈十” 益行者计划---李四上线"
-                        android:textSize="13dp"/>
+                        android:textSize="13dp" />
                 </FrameLayout>
             </LinearLayout>
 
@@ -210,20 +201,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <View style="@style/main_devider"/>
+                <View style="@style/main_devider" />
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="13dp"
-                    android:background="#ffededed"/>
+                    android:background="#ffededed" />
 
-                <View style="@style/main_devider"/>
+                <View style="@style/main_devider" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="160dp"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="160dp"
@@ -236,7 +226,7 @@
                     <View
                         android:layout_width="1.0px"
                         android:layout_height="fill_parent"
-                        android:background="#ffdfdfdf"/>
+                        android:background="#ffdfdfdf" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -249,11 +239,10 @@
                             android:layout_height="0dp"
                             android:layout_weight="1"
                             android:background="@drawable/bottomimage2"
-                            android:scaleType="centerCrop"
-                            />
+                            android:scaleType="centerCrop" />
 
 
-                        <View style="@style/main_devider"/>
+                        <View style="@style/main_devider" />
 
                         <ImageView
                             android:id="@+id/zuiduozhichi"
@@ -261,12 +250,12 @@
                             android:layout_height="0dp"
                             android:layout_weight="1"
                             android:background="@drawable/bottomimage3"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <View style="@style/main_devider"/>
+            <View style="@style/main_devider" />
 
             <RelativeLayout
                 android:layout_width="fill_parent"
@@ -280,10 +269,10 @@
                     android:layout_marginLeft="15.0dip"
                     android:text="热门推荐 "
                     android:textColor="#ff939393"
-                    android:textSize="13.0sp"/>
+                    android:textSize="13.0sp" />
             </RelativeLayout>
 
-            <View style="@style/main_devider"/>
+            <View style="@style/main_devider" />
 
             <com.lkw.myapplication.tools.MyListView
                 android:id="@+id/main_list"

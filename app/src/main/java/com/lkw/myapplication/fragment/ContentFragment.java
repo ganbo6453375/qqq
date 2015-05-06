@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
@@ -29,6 +30,7 @@ import com.lkw.myapplication.LoginActivity;
 import com.lkw.myapplication.MainActivity;
 import com.lkw.myapplication.ProgressActivity;
 import com.lkw.myapplication.R;
+import com.lkw.myapplication.SearchActivity;
 import com.lkw.myapplication.adapter.HomeLVAdapter;
 import com.lkw.myapplication.tools.AutoTextView;
 
@@ -82,6 +84,7 @@ public class ContentFragment extends Fragment implements View.OnClickListener {
     private HomeLVAdapter lvAdapter;
     private ImageView email;
     private ImageView content_frame_back;
+    private TextView main_search;
 
 
     public ContentFragment() {
@@ -127,6 +130,14 @@ public class ContentFragment extends Fragment implements View.OnClickListener {
 
         content_frame_back = (ImageView) view.findViewById(R.id.content_frame_back);
         content_frame_back.setOnClickListener(this);
+        main_search = ((TextView) view.findViewById(R.id.main_search));
+        main_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
+                startActivity(intent);
+            }
+        });
 
         initCircleimg_pagerListener();//实例化中间八个圆图的监听
         circleimg_pager.setAdapter(new HomeCircleImgAdapter(getFragmentManager()));

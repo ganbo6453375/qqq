@@ -7,7 +7,7 @@
     <RelativeLayout
         android:id="@+id/search_bar"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:background="#55acef">
 
         <LinearLayout
@@ -22,24 +22,17 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginLeft="6dp"
-                android:src="@drawable/search_navi" />
-
-            <EditText
+            <SearchView
                 android:id="@+id/searchInput"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@null"
-                android:hint="请输入关键字"
-                android:paddingLeft="6dp"
+                android:iconifiedByDefault="false"
                 android:paddingRight="8dp"
+                android:queryHint="请输入关键字"
                 android:singleLine="true"
                 android:textColorHint="#c2c2c2"
-                android:textSize="15sp" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <TextView
@@ -102,6 +95,7 @@
                     android:paddingRight="8dp">
 
                     <Button
+                        android:id="@+id/btn1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
@@ -110,6 +104,7 @@
                         android:text="1" />
 
                     <Button
+                        android:id="@+id/btn2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
@@ -118,6 +113,7 @@
                         android:text="2" />
 
                     <Button
+                        android:id="@+id/btn3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
@@ -126,6 +122,7 @@
                         android:text="3" />
 
                     <Button
+                        android:id="@+id/btn4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
@@ -134,6 +131,7 @@
                         android:text="4" />
 
                     <Button
+                        android:id="@+id/btn5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"

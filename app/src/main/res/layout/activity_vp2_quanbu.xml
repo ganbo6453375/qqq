@@ -1,80 +1,79 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#ff6fbfff"
-        android:gravity="center_vertical"
-        >
+        android:gravity="center_vertical">
+
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/active_title_icon_01"
-            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             android:paddingLeft="15dp"
-            />
+            android:src="@drawable/active_title_icon_01" />
+
         <TextView
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="30dp"
             android:text="返回"
             android:textColor="#fff"
-            android:textSize="19sp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:paddingLeft="30dp"
-            />
+            android:textSize="19sp" />
+
         <TextView
             android:id="@+id/text_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="全部"
             android:textColor="#fff"
             android:textSize="22sp"
-            android:layout_centerInParent="true"
 
             />
+
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/user_search"
             android:layout_alignParentRight="true"
             android:paddingRight="15dp"
-            />
+            android:src="@drawable/user_search" />
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:orientation="horizontal"
         android:background="#fff"
-        >
+        android:orientation="horizontal">
         <!--定义全部的信息下拉菜单-->
         <Spinner
             android:id="@+id/spinner_type"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
-            ></Spinner>
+            android:background="@null"
+            android:popupBackground="#fff"></Spinner>
 
         <TextView
             android:layout_width="1dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
-            android:background="#d297afaa"/>
+            android:background="#d297afaa" />
         <!--默认排序下拉菜单-->
         <Spinner
             android:id="@+id/spinner_order"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
         </Spinner>
 
@@ -82,34 +81,24 @@
             android:layout_width="1dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
-            android:background="#d297afaa"/>
+            android:background="#d297afaa" />
         <!--全部状态下拉菜单-->
         <Spinner
-          android:id="@+id/spinner_state"
+            android:id="@+id/spinner_state"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            ></Spinner>
+
+            android:layout_weight="1"></Spinner>
 
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0.6dp"
-        android:background="#d297afaa"/>
+        android:background="#d297afaa" />
 
-    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
-        android:id="@+id/Scroll"
-        xmlns:ptr="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-
-
-        <com.lkw.myapplication.tools.MyListView
+    <ListView
         android:id="@+id/VP2_quanbulistView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        ></com.lkw.myapplication.tools.MyListView>
-        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+        android:layout_height="wrap_content" />
 </LinearLayout>

@@ -108,8 +108,9 @@
             android:label="@string/title_activity_add_friend" >
         </activity>
 
-
-
+        <activity
+            android:name=".SearchActivity">
+        </activity>
 
         <activity
             android:name=".SearchAddActivity"
